@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Menú Lateral Desplegable</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="menu-header">
+            <h2>Menú</h2>
+            <button id="toggleBtn">☰</button>
+        </div>
+        <ul class="menu-items">
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li class="dropdown">
+                <a href="productos.html" class="dropdown-btn">Productos</a>
+                <div class="dropdown-content">
+                    <a href="productos/electronicos.html">Electrónicos</a>
+                    <a href="productos/ropa.html">Ropa</a>
+                    <a href="productos/hogar.html">Hogar</a>
+                </div>
+            </li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="acerca.html">Acerca de</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h1>Bienvenido a Nuestro Sitio</h1>
+        <p>Esta es la página de inicio. Navega por el menú lateral para explorar nuestro contenido.</p>
+        <div class="content-box">
+            <h2>Últimas Noticias</h2>
+            <p>¡Bienvenido a nuestro sitio web! Aquí encontrarás información sobre nuestros productos y servicios.</p>
+            <p>Explora las diferentes secciones utilizando el menú lateral.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

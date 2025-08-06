@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de - Menú Lateral Desplegable</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-content {
+            line-height: 1.6;
+        }
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .team-member {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            flex: 1 1 200px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .team-member h3 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        .team-member .position {
+            color: #7f8c8d;
+            font-style: italic;
+            margin: 5px 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="menu-header">
+            <h2>Menú</h2>
+            <button id="toggleBtn">☰</button>
+        </div>
+        <ul class="menu-items">
+            <li><a href="index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="productos.html" class="dropdown-btn">Productos</a>
+                <div class="dropdown-content">
+                    <a href="productos/electronicos.html">Electrónicos</a>
+                    <a href="productos/ropa.html">Ropa</a>
+                    <a href="productos/hogar.html">Hogar</a>
+                </div>
+            </li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="acerca.html" class="active">Acerca de</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h1>Acerca de Nosotros</h1>
+        
+        <div class="content-box about-content">
+            <h2>Nuestra Historia</h2>
+            <p>Fundada en 2010, nuestra empresa ha estado sirviendo a la comunidad con productos de calidad y un servicio excepcional. Lo que comenzó como una pequeña tienda local ha crecido hasta convertirse en un referente en el sector.</p>
+            
+            <h2>Nuestra Misión</h2>
+            <p>Proporcionar a nuestros clientes productos de la más alta calidad, ofreciendo una experiencia de compra excepcional y un servicio al cliente inigualable.</p>
+            
+            <h2>Nuestro Equipo</h2>
+            <div class="team">
+                <div class="team-member">
+                    <h3>Juan Pérez</h3>
+                    <div class="position">CEO y Fundador</div>
+                    <p>Con más de 15 años de experiencia en el sector, Juan lidera nuestro equipo con visión y dedicación.</p>
+                </div>
+                <div class="team-member">
+                    <h3>María González</h3>
+                    <div class="position">Directora de Ventas</div>
+                    <p>María se asegura de que nuestros clientes reciban la mejor atención y asesoramiento.</p>
+                </div>
+                <div class="team-member">
+                    <h3>Carlos Rodríguez</h3>
+                    <div class="position">Jefe de Operaciones</div>
+                    <p>Carlos supervisa nuestras operaciones diarias para garantizar la máxima eficiencia.</p>
+                </div>
+            </div>
+            
+            <h2>Nuestros Valores</h2>
+            <ul>
+                <li><strong>Calidad:</strong> Ofrecemos solo los mejores productos en el mercado.</li>
+                <li><strong>Integridad:</strong> Hacemos negocios con honestidad y transparencia.</li>
+                <li><strong>Innovación:</strong> Siempre buscamos mejorar y ofrecer lo último a nuestros clientes.</li>
+                <li><strong>Servicio al Cliente:</strong> Nuestros clientes son nuestra prioridad número uno.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
